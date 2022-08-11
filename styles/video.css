@@ -32,7 +32,9 @@
   }
 
   .thumbnail-row {
+    z-index: 0;
     margin-bottom: 12px;
+    position:relative;
   }
 
   .video-author,
@@ -50,5 +52,45 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 16px;
+
+  }
+
+  @media (max-width:850px)  {
+    .video-grid{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width:851px) and (max-width:1299px) {
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+  }
+
+  @media (min-width:1300px) {
+      .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+  
+    }
+
+
+    
+  .video-time{
+   
+    color: white;
+    position: absolute;
+    right: 7px;
+    bottom: 7px;
+    background-color: black;
+    font-size: 12px;
+    font-weight: 500;
+    padding:4px 5px 4px 2px;
+
+    border-radius: 3px;
+    ;
+
 
   }
